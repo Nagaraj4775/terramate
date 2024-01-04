@@ -73,6 +73,6 @@ jobs:
       - name: Publish Plans for Changed Stacks
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
           header: terraform-plan
           path: pr-comment.txt
