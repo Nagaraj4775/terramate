@@ -15,7 +15,7 @@ module "security_group" {
   source	      = "../modules/aws-security-groups"
   sg_name    	      = "terramate-sg-${global.env}"
   ingress_cidr_blocks = ["0.0.0.0/0"]
-  ingress_rules       = ["http-80-tcp", "all-icmp"]
+  ingress_rules       = ["http-80-tcp"]
 }
 
 }
