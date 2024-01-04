@@ -1,5 +1,5 @@
 variable "sg_name" {
-  description = "Name of security group"
+  description = "Name of security group used for updates"
   type        = string
 }
 
